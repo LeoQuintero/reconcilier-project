@@ -1,0 +1,41 @@
+# --- SECCIÓN 1: ENTORNOS VIRTUALES ---
+# Bloqueamos esto porque cada desarrollador crea su propio entorno.
+# Subirlo genera conflictos y pesa demasiado.
+.venv/
+venv/
+env/
+ENV/
+
+# --- SECCIÓN 2: ARCHIVOS DE IDE Y SISTEMA ---
+# Tu configuración de PyCharm es tuya. No debe estar en el repo.
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# --- SECCIÓN 3: COMPILADOS DE PYTHON ---
+# Basura que genera Python automáticamente. No aporta valor.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- SECCIÓN 4: DATOS SENSIBLES O MASIVOS (CRÍTICO) ---
+# En Fintech, NUNCA subimos datos reales de clientes ni CSVs pesados.
+# Mantenemos la estructura de carpetas (.gitkeep) pero ignoramos los archivos dentro.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/output/*
+!data/output/.gitkeep
+*.csv
+*.xlsx
+*.json
+
+# --- SECCIÓN 5: LOGS Y REPORTES ---
+# El resultado de la auditoría es temporal, no versionable.
+*.log
+reports/
+.pytest_cache/
+htmlcov/
+site/

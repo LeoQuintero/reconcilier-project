@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/reconciler-project.iml" filepath="$PROJECT_DIR$/.idea/reconciler-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/financial-reconciliation-engine.iml" filepath="$PROJECT_DIR$/.idea/financial-reconciliation-engine.iml" />
     </modules>
   </component>
 </project>
